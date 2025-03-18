@@ -5,30 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="src/output.css">
   
   <title>Frontend Mentor | Blog preview card</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="h-screen flex items-center justify-center bg-amber-300">
+    <main class="w-[375px] flex flex-col gap-4 bg-white border rounded-2xl card-shadow p-6 m-5">
+        <header class="flex flex-col gap-4 text-gray-950">
+            <img src="assets/images/illustration-article.svg" alt="article illustration" class="rounded-xl">
 
-  Learning
+            <div class="self-start bg-amber-300 ff-figtree-800 text-sm rounded-sm py-1 px-3">
+                Learning
+            </div>
 
-  Published 21 Dec 2023
+            <p class="ff-figtree-500 text-sm">Published 21 Dec 2023</p>
+        </header>
 
-  HTML & CSS foundations
+        <section>
+            <h1 class="text-2xl ff-figtree-800 text-gray-950 cursor-pointer hover:text-amber-300 transition-colors mb-4">
+                HTML & CSS foundations
+            </h1>
 
-  These languages are the backbone of every website, defining structure, content, and presentation.
+            <p class="ff-figtree-500 text-gray-500 ">
+                These languages are the backbone of every website, defining structure, content, and presentation.
+            </p>
+        </section>
 
-  Greg Hooper
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <footer class="flex items-center gap-3">
+            <img src="assets/images/image-avatar.webp" alt="Greg Hooper photo avatar" class="w-9">
+
+            <p class="ff-figtree-800 text-sm">Greg Hooper</p>
+        </footer>
+    </main>
 </body>
 </html>

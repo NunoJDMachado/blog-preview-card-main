@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+.card-shadow {
+    box-shadow: 7px 7px;
+}
+
+@font-face {
+    font-family: "Figtree";
+    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf');
+}
+
+.ff-figtree-500 {
+    font-family: "Figtree";
+    font-weight: 500;
+    font-optical-sizing: auto;
+}
+
+.ff-figtree-800 {
+    font-family: "Figtree";
+    font-weight: 800;
+    font-optical-sizing: auto;
+}
